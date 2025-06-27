@@ -1,0 +1,14 @@
+PROBLEM_FILE = INSTANCES/Barreto/Christ100-10-f.atsp
+
+# Control de ejecución
+MAX_TRIALS = 10000
+RUNS = 10
+SEED = 42
+TRACE_LEVEL = 1
+STOP_AT_OPTIMUM = YES
+
+# Solución esperada (si la conoces)
+OPTIMUM = 63145
+
+# Archivo de salida del tour
+OUTPUT_TOUR_FILE = TOURS/Barreto/Christ100-10-f.63145.tour

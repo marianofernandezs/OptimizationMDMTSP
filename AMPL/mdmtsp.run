@@ -1,0 +1,10 @@
+reset;
+model mdmtsp.mod;
+data mdmtsp.dat;
+
+option solver cplex;  # Puedes cambiar esto si usas otro solver: glpk, gurobi, knitro...
+
+solve;
+
+display TotalCost;
+display x;

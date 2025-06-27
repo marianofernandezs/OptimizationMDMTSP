@@ -1,0 +1,11 @@
+set V      := 1 2 3 4 5 6 7 8 ;
+set CLIENTES := 1 2 3 4 5 6 ;
+set DEPOSITOS := 7 8 ;
+set K      := 1 2 3 ;
+param depot := 1 7  2 7  3 8 ;
+param c:   1  2  3  4  5  6  7  8 :=
+1  0 10 15 20  5  7  2  3
+2 10  0 35 25 12 14  8  9
+...                                   
+;
+param retornar := 1

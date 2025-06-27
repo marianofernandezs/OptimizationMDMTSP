@@ -1,0 +1,52 @@
+#!/bin/bash
+# Usage: ./run_MDMTSP class name max_trials runs [ optimum ]
+
+if [ -z "$4" ]; then
+    echo "./run_MDMTSP class name max_trials runs [ optimum ]"
+    exit
+fi
+
+lkh="../LKH"
+class=$1
+name=$2
+max_trials=$3
+runs=$4
+optimum=$5
+par=TMP/$name.pid$$.par
+
+mkdir -p TOURS
+mkdir -p TOURS/$class
+mkdir -p TMP
+
+echo "PROBLEM_FILE = INSTANCES/$class/$name.atsp" >> $par
+echo "MAX_TRIALS = $max_trials" >> $par
+echo "RUNS = $runs" >> $par
+
+echo "POPULATION_SIZE = 10" >> $par
+# echo "TOUR_FILE = TOURS/$class/$name.$.tour" >> $par
+echo "MAX_TRIALS = $max_trials" >> $par
+echo "RUNS = $runs" >> $par
+echo "RECOMBINATION = CLARIST" >> $par
+echo "SEED = 42" >> $par
+echo "TRACE_LEVEL = 1" >> $par
+
+if false; then
+    for FILE in `ls TOURS/$class/$name.*.tour | sort -nr` ;
+    do
+    	echo "INITIAL_TOUR_FILE = $FILE" >> $par
+      	break
+    done
+    echo "RUNS = 1" >> $par
+    echo "STOP_AT_OPTIMUM = NO" >> $par
+fi
+
+if [ -n "$optimum" ]; then
+    echo "OPTIMUM = $optimum" >> $par
+fi
+
+cat $par
+
+$lkh $par
+
+/bin/rm -f $par
+

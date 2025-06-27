@@ -1,0 +1,71 @@
+#!/bin/bash
+
+./transform Barreto Christ50-5-f f
+./transform Barreto Christ75-10-f f
+./transform Barreto Christ100-10-f f
+./transform Barreto Das88-8-f f
+./transform Barreto Das150-10-f f
+./transform Barreto Gaspelle21-5-f f
+./transform Barreto Gaspelle22-5-f f
+./transform Barreto Gaspelle29-5-f f
+./transform Barreto Gaspelle32-5-f f
+./transform Barreto Gaspelle36-5-f f
+./transform Barreto Min27-5-f f
+./transform Barreto Min134-8-f f
+./transform Barreto Or117-14-f f
+
+./transform Prodhon 20-5-1-i
+./transform Prodhon 20-5-1b-i
+./transform Prodhon 20-5-2-i
+./transform Prodhon 20-5-2b-i
+./transform Prodhon 50-5-1-i
+./transform Prodhon 50-5-2-i
+./transform Prodhon 50-5-2BIS-i
+./transform Prodhon 50-5-2bBIS-i
+./transform Prodhon 50-5-3-i
+./transform Prodhon 100-10-1-i
+./transform Prodhon 100-10-2-i
+./transform Prodhon 100-10-3-i
+./transform Prodhon 100-5-1-i
+./transform Prodhon 100-5-2-i
+./transform Prodhon 100-5-3-i
+./transform Prodhon 200-10-1-i
+./transform Prodhon 200-10-2-i
+./transform Prodhon 200-10-3-i
+
+./transform Tuzun P111112
+./transform Tuzun P111122
+./transform Tuzun P111212
+./transform Tuzun P111222
+./transform Tuzun P112112
+./transform Tuzun P112122
+./transform Tuzun P112212
+./transform Tuzun P112222
+./transform Tuzun P113112
+./transform Tuzun P113122
+./transform Tuzun P113212
+./transform Tuzun P113222
+./transform Tuzun P121112
+./transform Tuzun P121122
+./transform Tuzun P121212
+./transform Tuzun P121222
+./transform Tuzun P122112
+./transform Tuzun P122122
+./transform Tuzun P122212
+./transform Tuzun P122222
+./transform Tuzun P123112
+./transform Tuzun P123122
+./transform Tuzun P123212
+./transform Tuzun P123222
+./transform Tuzun P131112
+./transform Tuzun P131122
+./transform Tuzun P131212
+./transform Tuzun P131222
+./transform Tuzun P132112
+./transform Tuzun P132122
+./transform Tuzun P132212
+./transform Tuzun P132222
+./transform Tuzun P133112
+./transform Tuzun P133122
+./transform Tuzun P133212
+./transform Tuzun P133222
